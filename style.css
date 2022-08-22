@@ -38,12 +38,12 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-height: 400px;
-    max-width: 600px;
+    /* min-height: 400px;
+    max-width: 700px; */
 }
 
 .card {
-    border-radius: .3rem;
+    padding: 2rem;
 }
 
 #sedans {
@@ -58,14 +58,22 @@ body {
     background-color: var(--very-dark-cyan);
 }
 
+img {
+    padding-bottom: 1rem;
+}
+
 h1 {
     color: var(--very-light-gray-background-headings-buttons);
 
     font-family: 'Big Shoulders Display', cursive;
+
+    padding-bottom: 1rem;
 }
 
 p {
     color: var(--transparent-white-paragraphs);
+    line-height: 3ch;
+    padding-bottom: 4rem;
 }
 
 button {
@@ -74,14 +82,54 @@ button {
     border-style: none;
 
     font-family: 'Lexend Deca', sans-serif;
+    padding: .5rem 1rem;
 }
 
 #sedans button {
     color: var(--bright-orange);
 }
+
+#sedans button:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray-background-headings-buttons);
+    border: 2px solid var(--very-light-gray-background-headings-buttons);
+    cursor: pointer;
+}
+
 #suvs button {
     color: var(--dark-cyan); 
 }
+
+#suvs button:hover {
+    background-color: var(--dark-cyan); 
+    color: var(--very-light-gray-background-headings-buttons);
+    border: 2px solid var(--very-light-gray-background-headings-buttons);
+    cursor: pointer;
+}
+
 #luxury button {
     color: var(--very-dark-cyan);
+}
+
+#luxury button:hover {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray-background-headings-buttons);
+    border: 2px solid var(--very-light-gray-background-headings-buttons); 
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        max-height: 500px;
+        min-width: 300px;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 }
