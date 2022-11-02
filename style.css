@@ -21,38 +21,35 @@ body {
 }
 
 h1 {
-    color: var(--very-light-gray-background-headings-buttons);
-
-    font-family: 'Big Shoulders Display', cursive;
-
     padding-top: 1rem;
+    color: var(--very-light-gray-background-headings-buttons);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
 }
 
 p {
     color: var(--transparent-white-paragraphs);
     line-height: 3ch;
     padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 12rem;
 }
 
 /* COMPOSITION */
 
 .container-margin {
-    margin: 4rem 1rem;
+    margin: 4rem 2rem;
 }
 
 .card-padding {
-    padding: 2rem;
+    padding: 3rem 3rem;
 }
 
-/* img {
-    padding-bottom: 1rem;
-} */
-
-button-border-radius {
+.button-border-radius {
     border-radius: 1rem;
 }
 
-button-padding {
+.button-padding {
     padding: .5rem 1rem;
 }
 
@@ -70,15 +67,19 @@ button-padding {
     background-color: var(--very-dark-cyan);
 }
 
-button-bg-color {
+.button-bg-color {
     background-color: var(--very-light-gray-background-headings-buttons);
 }
 
-button-border-style {
+.button-border-style {
     border-style: none;
-    }
+}
 
-button-font {
+.button-text-decoration {
+    text-decoration: none;
+}
+
+.button-font {
     font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -100,26 +101,26 @@ button-font {
 
 /* EXCEPTIONS */
 
-/* #sedans button:hover {
+.sedans a:hover {
     background-color: var(--bright-orange);
     color: var(--very-light-gray-background-headings-buttons);
     border: 2px solid var(--very-light-gray-background-headings-buttons);
     cursor: pointer;
-} */
+}
 
-/* #suvs button:hover {
+.suvs a:hover {
     background-color: var(--dark-cyan); 
     color: var(--very-light-gray-background-headings-buttons);
     border: 2px solid var(--very-light-gray-background-headings-buttons);
     cursor: pointer;
-} */
+}
 
-/* #luxury button:hover {
+.luxury a:hover {
     background-color: var(--very-dark-cyan);
     color: var(--very-light-gray-background-headings-buttons);
     border: 2px solid var(--very-light-gray-background-headings-buttons); 
     cursor: pointer;
-} */
+}
 
 @media (min-width: 600px) {
 
