@@ -35,6 +35,14 @@ p {
     width: 12rem;
 }
 
+button {
+    background-color: var(--very-light-gray-background-headings-buttons);
+    font-family: 'Lexend Deca', sans-serif;
+    /* text-decoration: none; */
+    cursor: pointer;
+    border-style: none;
+}
+
 /* COMPOSITION */
 
 .container-margin {
@@ -67,22 +75,6 @@ p {
     background-color: var(--very-dark-cyan);
 }
 
-.button-bg-color {
-    background-color: var(--very-light-gray-background-headings-buttons);
-}
-
-.button-border-style {
-    border-style: none;
-}
-
-.button-text-decoration {
-    text-decoration: none;
-}
-
-.button-font {
-    font-family: 'Lexend Deca', sans-serif;
-}
-
 .sedans-button-color {
     color: var(--bright-orange);
 }
@@ -95,46 +87,71 @@ p {
     color: var(--very-dark-cyan);
 }
 
+/* .button-text-decoration {
+    text-decoration: none;
+} */
+
 /* BLOCK */
 
 
 
 /* EXCEPTIONS */
 
-.sedans a:hover {
+.sedans button:active {
     background-color: var(--bright-orange);
     color: var(--very-light-gray-background-headings-buttons);
     border: 2px solid var(--very-light-gray-background-headings-buttons);
-    cursor: pointer;
 }
 
-.suvs a:hover {
+/* .sedans button:hover {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray-background-headings-buttons);
+    border: 2px solid var(--very-light-gray-background-headings-buttons);
+} */
+
+/* .suvs button:hover { 
     background-color: var(--dark-cyan); 
     color: var(--very-light-gray-background-headings-buttons);
     border: 2px solid var(--very-light-gray-background-headings-buttons);
-    cursor: pointer;
-}
+}  */
 
-.luxury a:hover {
+.suvs button:active { 
+    background-color: var(--dark-cyan); 
+    color: var(--very-light-gray-background-headings-buttons);
+    border: 2px solid var(--very-light-gray-background-headings-buttons);
+} 
+
+/* .luxury button:hover {
     background-color: var(--very-dark-cyan);
     color: var(--very-light-gray-background-headings-buttons);
     border: 2px solid var(--very-light-gray-background-headings-buttons); 
-    cursor: pointer;
-}
+}  */
+
+.luxury button:active {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray-background-headings-buttons);
+    border: 2px solid var(--very-light-gray-background-headings-buttons); 
+} 
+
+/*   */
 
 @media (min-width: 600px) {
 
-    /* .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+    .container {
+        display: flex;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-    }   
+    } 
+    
+    .container-margin {
+        margin: 0 0;
+    }
 
     .card {
-        width: 330px;
-    } */
+        width: 300px;
+    }
 
 }
+
