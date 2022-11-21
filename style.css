@@ -32,15 +32,7 @@ p {
     line-height: 3ch;
     padding-top: 1rem;
     padding-bottom: 2rem;
-    width: 12rem;
-}
-
-button {
-    background-color: var(--very-light-gray-background-headings-buttons);
-    font-family: 'Lexend Deca', sans-serif;
-    /* text-decoration: none; */
-    cursor: pointer;
-    border-style: none;
+    width: 12.25rem;
 }
 
 /* COMPOSITION */
@@ -51,14 +43,6 @@ button {
 
 .card-padding {
     padding: 3rem 3rem;
-}
-
-.button-border-radius {
-    border-radius: 1rem;
-}
-
-.button-padding {
-    padding: .5rem 1rem;
 }
 
 /* UTILITY */
@@ -75,21 +59,13 @@ button {
     background-color: var(--very-dark-cyan);
 }
 
-.sedans-button-color {
-    color: var(--bright-orange);
+.border-radius-first {
+    border-radius: .5rem .5rem 0 0;
 }
 
-.suvs-button-color {
-    color: var(--dark-cyan); 
+.border-radius-last {
+    border-radius: 0 0 .5rem .5rem;
 }
-
-.luxury-button-color {
-    color: var(--very-dark-cyan);
-}
-
-/* .button-text-decoration {
-    text-decoration: none;
-} */
 
 /* BLOCK */
 
@@ -97,45 +73,77 @@ button {
 
 /* EXCEPTIONS */
 
-.sedans button:active {
-    background-color: var(--bright-orange);
-    color: var(--very-light-gray-background-headings-buttons);
-    border: 2px solid var(--very-light-gray-background-headings-buttons);
+a {
+    width: 100%;
+    padding: .75rem 1.75rem;
+    border-radius: 1.25rem;
+    background-color: var(--very-light-gray-background-headings-buttons);
+    text-decoration: none;
 }
 
-/* .sedans button:hover {
+.sedans a {
+    color: var(--bright-orange);
+}
+
+.suvs a {
+    color: var(--dark-cyan);
+}
+
+.luxury a {
+    color: var(--very-dark-cyan);
+}
+
+a:hover {
+    border: solid white .05rem;
+    color: var(--very-light-gray-background-headings-buttons);
+}
+
+.sedans a:hover {
     background-color: var(--bright-orange);
-    color: var(--very-light-gray-background-headings-buttons);
-    border: 2px solid var(--very-light-gray-background-headings-buttons);
-} */
+}
 
-/* .suvs button:hover { 
-    background-color: var(--dark-cyan); 
-    color: var(--very-light-gray-background-headings-buttons);
-    border: 2px solid var(--very-light-gray-background-headings-buttons);
-}  */
+.suvs a:hover {
+    background-color: var(--dark-cyan);
+}
 
-.suvs button:active { 
-    background-color: var(--dark-cyan); 
-    color: var(--very-light-gray-background-headings-buttons);
-    border: 2px solid var(--very-light-gray-background-headings-buttons);
-} 
-
-/* .luxury button:hover {
+.luxury a:hover {
     background-color: var(--very-dark-cyan);
-    color: var(--very-light-gray-background-headings-buttons);
-    border: 2px solid var(--very-light-gray-background-headings-buttons); 
-}  */
+}
 
-.luxury button:active {
-    background-color: var(--very-dark-cyan);
+a:active {
+    border: solid white .05rem;
     color: var(--very-light-gray-background-headings-buttons);
-    border: 2px solid var(--very-light-gray-background-headings-buttons); 
-} 
+}
+
+.sedans a:active {
+    background-color: var(--bright-orange);
+}
+
+.suvs a:active {
+    background-color: var(--dark-cyan);
+}
+
+.luxury a:active {
+    background-color: var(--very-dark-cyan);
+}
 
 /*   */
 
 @media (min-width: 600px) {
+
+    body {
+        font-size: 1.1em;
+    }
+
+    h1 {
+        padding-top: 2rem;
+    }
+
+    p {
+        padding-top: 1.75rem;
+        padding-bottom: 7rem;
+        width: 13rem;
+    }
 
     .container {
         display: flex;
@@ -151,6 +159,14 @@ button {
 
     .card {
         width: 300px;
+    }
+
+    .border-radius-first {
+        border-radius: .5rem 0 0 .5rem;
+    }
+    
+    .border-radius-last {
+        border-radius: 0 .5rem .5rem 0;
     }
 
 }
