@@ -93,23 +93,6 @@ a {
     color: var(--very-dark-cyan);
 }
 
-a:hover {
-    border: solid white .05rem;
-    color: var(--very-light-gray-background-headings-buttons);
-}
-
-.sedans a:hover {
-    background-color: var(--bright-orange);
-}
-
-.suvs a:hover {
-    background-color: var(--dark-cyan);
-}
-
-.luxury a:hover {
-    background-color: var(--very-dark-cyan);
-}
-
 /*   */
 
 @media (min-width: 600px) {
@@ -150,6 +133,23 @@ a:hover {
     
     .border-radius-last {
         border-radius: 0 .5rem .5rem 0;
+    }
+
+    a:hover {
+        border: solid white .05rem;
+        color: var(--very-light-gray-background-headings-buttons);
+    }
+    
+    .sedans a:hover {
+        background-color: var(--bright-orange);
+    }
+    
+    .suvs a:hover {
+        background-color: var(--dark-cyan);
+    }
+    
+    .luxury a:hover {
+        background-color: var(--very-dark-cyan);
     }
 
 }
