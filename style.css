@@ -110,23 +110,6 @@ a:hover {
     background-color: var(--very-dark-cyan);
 }
 
-a:active {
-    border: solid white .05rem;
-    color: var(--very-light-gray-background-headings-buttons);
-}
-
-.sedans a:active {
-    background-color: var(--bright-orange);
-}
-
-.suvs a:active {
-    background-color: var(--dark-cyan);
-}
-
-.luxury a:active {
-    background-color: var(--very-dark-cyan);
-}
-
 /*   */
 
 @media (min-width: 600px) {
